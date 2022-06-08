@@ -5,3 +5,87 @@
 @import "./variable";
 
 @import "./global";
+
+// HEADER
+
+.header {
+  position: relative;
+  min-height: 740px;
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #404149;
+    opacity: 0.9;
+  }
+  &__body {
+    position: relative;
+    z-index: 3;
+  }
+  &__top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-bottom: 112px;
+  }
+  &__title {
+    max-width: 734px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 95px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $color-white;
+  }
+  &__subtitle {
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+  }
+}
+
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  background-color: $color-accent;
+  cursor: pointer;
+  &__line {
+    display: inline-block;
+    width: 21px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #fff;
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+// HEADER
