@@ -11,6 +11,7 @@
 .header {
   position: relative;
   min-height: 740px;
+  padding-bottom: 30px;
   &__bg {
     position: absolute;
     top: 0;
@@ -89,3 +90,98 @@
 }
 
 // HEADER
+
+// ABOUT
+
+.about {
+  min-height: 1080px;
+  &__container {
+    position: relative;
+  }
+  &__main {
+    padding-top: 256px;
+  }
+  &__title {
+    margin-bottom: 55px;
+    text-align: center;
+    color: $color-dark;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  &__item {
+  }
+  &__item-image {
+    min-height: 350px;
+    margin-bottom: 45px;
+    img {
+      object-fit: cover;
+    }
+  }
+  &__item-title {
+    position: relative;
+    padding-top: 27px;
+    margin-bottom: 17px;
+    color: $color-dark;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 55px;
+      height: 6px;
+      background-color: $color-accent;
+    }
+  }
+  &__item-text {
+    line-height: 22px;
+    color: $color-grey;
+  }
+}
+
+.info {
+  position: absolute;
+  top: -150px;
+  z-index: 4;
+  min-height: 300px;
+  width: 100%;
+  padding: 54px 130px;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  &__wrapper {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  &__item {
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 107px;
+    text-transform: uppercase;
+    color: $color-accent;
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #000;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-grey;
+  }
+}
+
+// ABOUT
+
+@import "./media";
