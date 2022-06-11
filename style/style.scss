@@ -95,7 +95,6 @@
 
 .about {
   min-height: 1080px;
-  // margin-bottom: 120px;
   &__container {
     position: relative;
   }
@@ -236,5 +235,43 @@
 }
 
 // REQUEST
+
+// SERVICES
+
+.services {
+  padding: 156px 0;
+  &__title {
+    text-align: center;
+    margin-bottom: 66px;
+    color: #000;
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  &__item {
+    padding: 59px 10px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+  }
+  &__img {
+    width: 60px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+  }
+  &__text {
+    text-align: center;
+    margin: 0 auto;
+    width: 172px;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    color: #000;
+  }
+}
+
+// SERVICES
 
 @import "./media";
