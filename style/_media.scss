@@ -1,6 +1,6 @@
 @media (max-width: 992px) {
   .about {
-    margin-bottom: 60px;
+    padding: 60px 0;
     &__main {
       padding-top: 360px;
     }
@@ -23,6 +23,16 @@
     }
     &__info {
       margin-bottom: 15px;
+    }
+  }
+
+  .services {
+    padding: 60px 0;
+    &__body {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__title {
+      margin-bottom: 35px;
     }
   }
 }
@@ -88,6 +98,20 @@
     &__subtitle {
       font-size: 21px;
       line-height: 28px;
+    }
+  }
+
+  .services {
+    &__body {
+      gap: 8px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    &__body {
+      grid-template-columns: 1fr;
     }
   }
 }
