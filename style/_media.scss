@@ -1,3 +1,12 @@
+@media (max-width: 1919px) {
+  .portfolio {
+    &__body {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-auto-rows: 350px;
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .about {
     padding: 60px 0;
