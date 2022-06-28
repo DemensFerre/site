@@ -292,6 +292,7 @@
   }
   &__item {
     position: relative;
+    cursor: pointer;
   }
 
   &__img {
@@ -305,5 +306,45 @@
 }
 
 // PORTFOLIO
+
+// ANSWER
+
+.answer {
+  padding: 150px 0;
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__item {
+    margin-bottom: 40px;
+  }
+  &__item_active {
+    .answer__item-title {
+      &::before {
+        transform: rotate(-90deg);
+      }
+    }
+    .answer__item-text {
+      display: block;
+    }
+  }
+  &__item-title {
+    margin-bottom: 30px;
+    color: $color-accent;
+    &::before {
+      content: url("../img/answer/arrow.svg");
+      display: inline-block;
+      margin-right: 15px;
+    }
+  }
+
+  &__item-text {
+    display: none;
+    line-height: 22px;
+    color: $color-grey;
+  }
+}
+
+// ANSWER
 
 @import "./media";

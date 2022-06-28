@@ -44,6 +44,10 @@
       margin-bottom: 35px;
     }
   }
+
+  .answer {
+    padding: 60px 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -121,6 +125,12 @@
   .services {
     &__body {
       grid-template-columns: 1fr;
+    }
+  }
+
+  .answer {
+    &__item-title {
+      font-size: 22px;
     }
   }
 }
