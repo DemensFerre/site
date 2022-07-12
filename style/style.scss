@@ -347,4 +347,27 @@
 
 // ANSWER
 
+// PARTNERS
+
+.partners {
+  padding: 100px 0;
+  background-color: $color-dark;
+  &__title {
+    text-align: center;
+    margin-bottom: 60px;
+    color: $color-white;
+  }
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__item {
+  }
+}
+
+// PARTNERS
+
 @import "./media";
