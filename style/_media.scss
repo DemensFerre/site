@@ -52,6 +52,10 @@
   .partners {
     padding: 60px 0;
   }
+
+  .reviews {
+    padding: 60px 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -135,6 +139,12 @@
   .answer {
     &__item-title {
       font-size: 22px;
+    }
+  }
+
+  .reviews {
+    &__body {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
   }
 }

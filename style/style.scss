@@ -370,4 +370,43 @@
 
 // PARTNERS
 
+// REVIEWS
+
+.reviews {
+  padding: 150px 0;
+  &__title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__body {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  &__info {
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+  }
+  &__brackets {
+    margin-bottom: -40px;
+    font-family: $font-oswald;
+    font-weight: 700;
+    font-size: 96px;
+    color: $color-accent;
+  }
+  &__text {
+    color: $color-grey;
+  }
+  &__author {
+    span {
+      color: $color-accent;
+    }
+  }
+}
+
+// REVIEWS
+
 @import "./media";

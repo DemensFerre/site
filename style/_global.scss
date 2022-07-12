@@ -10,6 +10,7 @@ html {
 
 .page {
   height: 100%;
+  overflow-x: hidden;
   font-family: $font-oswald;
   font-weight: 400;
 }
